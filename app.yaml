@@ -1,0 +1,17 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /CSS
+  static_dir: CSS
+- url: /Javascript
+  static_dir: Javascript
+- url: /images
+  static_dir: images
+- url: /.*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: latest

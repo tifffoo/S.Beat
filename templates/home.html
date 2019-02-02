@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+
+<head>
+  <link href="../CSS/home.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="overlay" style="width:100%">
+    <i class="fas fa-times fa-4x close" style="color:black"></i>
+    <img class="image1" src="/images/newspapers.png">
+    <img class="image2" src="/images/newspapers.png">
+    <p class="explanation1">
+      <strong>How do I use this website?:</strong><br>
+      With Juxtapost, you can easily access and compare news articles from different news outlets all across the world based
+       on a specific search term. This can help you more easily formulate your opinions on the similarities and differences
+       between different news sources or even different countries on how they report on a certain topic.<br>
+    </p>
+    <p class="explanation2">
+      <strong>So...what's the point?:</strong><br>
+      Many people may unknowingly find themselves in a
+      <a href="https://en.wikipedia.org/wiki/Filter_bubble" target="_blank" style="font-weight:400">"filter bubble"</a>,
+       in which they are only exposed to content that aligns with their beliefs and/or values. This eventually leads to becoming
+       isolated or unaware of differing opinions, thus being placed within a "bubble". With Juxtapost, we hope to let you more
+       easily step out of that bubble by allowing you to more easily compare all different kinds of news, and broaden your
+       perspective about what kind of content you're consuming.
+     </p>
+
+  </div>
+
+
+
+  {% if current_user %}
+  <div class="navbar fill">
+    <ul>
+      <li><a href='/'>Home</a></li>
+      <li><a href='/profile'>Profile</a></li>
+      <li><a href="/about">About</a></li>
+
+    {% else %}
+    <div class="navbar fill">
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li class="how-to"><a>How do I use this website?</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Version
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href='/'>Compare U.S. Sources</a>
+          <a href="/international">Compare International Sources</a>
+          <a href="/usinternational">Compare U.S. & International Sources</a>
+        </div>
+
+      </div>
+
+
+    {% endif %}
+    <div>
+      {% if current_user %}
+      <li><a style='float: right;'href="{{ logout_url }}" class="button"> Log Out</a><br></li>
+    <!-- <a style='float: right;' href="{{ login_url }}" class="button"> Log In</a> -->
+
+      {% else %}
+        <li><a style='float: right;'href="{{ login_url }}" class="button"> Log In</a></li>
+      {% endif %}
+  </div>
+  </div>
+
+</body>
+
+<script src="../Javascript/home.js"></script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<title>About</title>
+
+<head>
+  <link href="../CSS/about.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+{% if current_user %}
+<div class="navbar">
+  <a href='/'>Home</a>
+  <a href='/profile'>Profile</a>
+  <a href="/about">About</a>
+  <a style='float:right;'href="{{ logout_url }}"> Log Out</a></h1>>
+
+  <br><br><br><br><br>
+  <h1 class="icon"> Meet the Developers</h1>
+  <p> Christina, Ava, Jessica, and Tiffany</p> <br>
+  <img src="/images/group.jpg" alt="group">
+  <center>
+
+{% else %}
+
+<div class="navbar">
+  <a href='/'>Home</a>
+  <a href="/about">About</a>
+  <a style='float:right;'href="{{ login_url }}"> Log In</a></h1>
+
+  <br><br><br><br><br>
+  <h1 class="icon"> Meet the Developers</h1>
+  <p> Christina, Ava, Jessica, and Tiffany</p> <br>
+  <img src="/images/group.jpg" alt="group">
+  <center>
+
+
+{% endif %}
+
+</html>

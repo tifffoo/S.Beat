@@ -1,0 +1,6 @@
+WebOb==1.8.5
+Paste==3.0.6
+webapp2==2.5.2
+Jinja2==2.10
+requests==2.21.0
+google-api-python-client==1.7.8
