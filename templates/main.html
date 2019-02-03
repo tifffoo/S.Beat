@@ -8,8 +8,8 @@
     <link href="../CSS/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap-reboot.min.css" integrity="sha256-6Uk2Y5UTmbboWmSq40s5J3wNDt6TzIUvse5UAXkWCjI=" crossorigin="anonymous" />
-</head>
-    <!-- <style type="text/css">
+
+    <style type="text/css">
         body {
             background: linear-gradient(to bottom, #99B5E8, #DBB79F);
             background-position: center;
@@ -104,32 +104,25 @@
         p a {
             color: #FFFFFF;
         }
-</style> -->
+</style>
+</head>
 
 
 <body>
     <nav>
 
-        {% if current_user %}
              <nav>
          	    <ul>
          		    <li><a href="/">home</a></li>
          		    <li><a href="/profile">my account</a></li>
          		    <li><a href="/about">about us</a></li>
          	    </ul>
-          {% else %}
-                  <ul>
-                      <li><a href="/">home</a></li>
-          		    <li><a href="/profile">my account</a></li>
-          		    <li><a href="/about">about us</a></li>
-                  </ul>
              </nav>
-          {% endif %}
-	    <!-- <ul>
+	    <ul>
 		    <li><a href="/">home</a></li>
 		    <li><a href="/profile">my account</a></li>
-		    <li><a href="/about">about us</a></li>
-	    </ul> -->
+		    <li><a href="about.html">about us</a></li>
+	    </ul>
     </nav>
 
   	<div class="logo-container">

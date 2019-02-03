@@ -129,27 +129,19 @@
 <body>
     <nav>
 
-        {% if current_user %}
-             <nav>
-         	    <ul>
-         		    <li><a href="/home">home</a></li>
-         		    <li><a href="/profile">my account</a></li>
-         		    <li><a href="/about">about us</a></li>
-         	    </ul>
-          {% else %}
-                  <ul>
-                      <li><a href="/home">home</a></li>
-          		    <li><a href="/profile">my account</a></li>
-          		    <li><a href="/about">about us</a></li>
-                  </ul>
-             </nav>
-          {% endif %}
-	    <ul>
-		    <li><a href="/home">home</a></li>
-		    <li><a href="/profile">my account</a></li>
-		    <li><a href="/about">about us</a></li>
-	    </ul>
-    </nav>
+        <nav>
+           <ul>
+               <li><a href="/">home</a></li>
+               <li><a href="/profile">my account</a></li>
+               <li><a href="/about">about us</a></li>
+           </ul>
+        </nav>
+   <ul>
+       <li><a href="main.html">home</a></li>
+       <li><a href="/profile">my account</a></li>
+       <li><a href="about.html">about us</a></li>
+   </ul>
+</nav>
 
   	<div class="logo-container">
   	    <img src="../img/logo.png" alt="Trulli" height="200px;">
