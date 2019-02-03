@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<form  id="form1" />
+
+<p>Which car/cars do you own?</p>
+<select name="car" multiple="yes">
+ <option name="car" value="ford">Ford</option>
+ <option name="car" value="volvo">Volvo</option>
+ <option name="car" value="saab">Saab</option>
+ <option name="car" value="hyundai">Hyundai</option>
+ <option name="car" value="mercedes">Mercedes</option>
+ <option name="car" value="audi">Audi</option>
+</select>
+
+<br />
+<input type="submit" value="Submit">
+
+</form>
+</table>
+<p id="answer"></p>
+<script>
+
+document.getElementById("form1").onsubmit=function() {
+multiple = document.querySelectorAll("option[name='car']:checked");
+
+for( i=0; i < multiple.length; i++ ) {
+document.getElementById("answer").innerHTML += multiple[i].value + ", ";
+
+}
+
+	   return false; // required to not refresh the page; just leave this here
+	   }// end the submit function
+</script>
+</body>
+</html>
