@@ -13,7 +13,7 @@
             background: linear-gradient(to bottom, #99B5E8, #DBB79F);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             font-family: 'Imprima', sans-serif;
 
             display: flex;
@@ -27,7 +27,8 @@
 
         .logo-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            margin-left: 50px;
             align-items: center;
         }
 
@@ -52,7 +53,7 @@
         }
 
         #title {
-            padding: 10px;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -60,7 +61,7 @@
 
         #title h1 {
             color: white;
-            font-size: 35px;
+            font-size: 50px;
         }
 
         #title p {
@@ -90,10 +91,16 @@
         p a {
             color: #FFFFFF;
         }
+        #checkbox{
+            font-size: 40px;
+        }
 </style>
 </head>
 
 <body>
+    <div class="logo-container">
+  	    <img src="../img/logo.png" alt="Trulli" height="150px;">
+  	</div>
     <nav>
 	    <ul>
 		    <li><a href="home.html">home</a></li>
@@ -102,25 +109,20 @@
 	    </ul>
     </nav>
 
-  	<div class="logo-container">
-  	    <img src="../img/logo.png" alt="Trulli" height="200px;">
-  	</div>
-
     <div id="title">
-    	<h1>What symptoms are you experiencing?</h1>
+    	<h1>What genital related symptoms are you experiencing?</h1>
+        <div id = "checkbox">
     	<p>
         <form action="/action_page.php" method="get">
-    <input type="checkbox" name="symptom" value="Fever"> I have a fever.<br>
-    <input type="checkbox" name="symptom" value="Headache"> I have a headache.<br>
-    <input type="checkbox" name="symptom" value="Diarrhea> I have diarrhea.<br>
-    <input type="checkbox" name="symptom" value="Vomiting"> I am vomiting.<br>
-    <input type="checkbox" name="symptom" value="Fatigue"> I am fatigued.<br>
-    <input type="checkbox" name="symptom" value="Sweat"> I am uncontrollably sweating.<br>
-    <input type="checkbox" name="symptom" value="Congestion"> I am congested.<br>
-    <input type="checkbox" name="symptom" value="Sneezing"> I am sneezing.<br>
-    <input type="checkbox" name="symptom" value="Coughing"> I am coughing.<br>
+    <input type="checkbox" name="symptom" value="warts"> I have observed genital warts.<br>
+    <input type="checkbox" name="symptom" value="bumps"> I have observed uncomfortable bumps on my skin.<br>
+    <input type="checkbox" name="symptom" value="painfulurination"> It is painful to urinate.<br>
+    <input type="checkbox" name="symptom" value="frequenturinate"> I feel the urge to urinate frequently.<br>
+    <input type="checkbox" name="symptom" value="cloudy"> I have observed cloudy and unusually colored urination.<br>
     <input type="submit" value="Submit"><br>
   </form>
+
+        </div>
     </div>
 
     <footer>
