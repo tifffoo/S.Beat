@@ -84,7 +84,7 @@
         footer p{
             color: white;
             flex-direction: column;
-            align-items: center; 
+            align-items: center;
         }
 
         p a {
@@ -94,13 +94,31 @@
 </head>
 
 <body>
-    <nav>
-	    <ul>
-		    <li><a href="home.html">home</a></li>
-		    <li><a href="menu.html">my account</a></li>
-		    <li><a href="contact.html">about us</a></li>
-	    </ul>
-    </nav>
+    {% if current_user %}
+        <nav>
+    	    <ul>
+    		    <li><a href="/">home</a></li>
+    		    <li><a href="/profile">my account</a></li>
+    		    <li><a href="/about">about us</a></li>
+    	    </ul>
+     {% else %}
+             <ul>
+                 <li><a href="/">home</a></li>
+     		    <li><a href="/profile">my account</a></li>
+     		    <li><a href="/about">about us</a></li>
+             </ul>
+        </nav>
+     {% endif %}
+
+        <div>
+          {% if current_user %}
+          <li><a style='float: left;'href="{{ logout_url }}" class="button"> Log Out</a><br></li>
+        <!-- <a style='float: right;' href="{{ login_url }}" class="button"> Log In</a> -->
+          {% else %}
+            <li><a style='float: left;'href="{{ login_url }}" class="button"> Log In</a></li>
+          {% endif %}
+      </div>
+  </div>
 
   	<div class="logo-container">
   	    <img src="../img/logo.png" alt="Trulli" height="200px;">
