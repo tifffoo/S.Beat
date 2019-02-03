@@ -7,8 +7,12 @@ handlers:
   static_dir: CSS
 - url: /Javascript
   static_dir: Javascript
-- url: /images
-  static_dir: images
+- url: /img
+  static_dir: img
+- url: /(.*\.png)
+  mime_type: img/png
+  static_files: SBeat/templates/img/\1
+  upload: SBeat/templates/img/(.*\.png)
 - url: /.*
   script: main.app
 

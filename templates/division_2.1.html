@@ -27,8 +27,7 @@
 
         .logo-container {
             display: flex;
-            flex-direction: row;
-            margin-left: 50px;
+            flex-direction: column;
             align-items: center;
         }
 
@@ -91,51 +90,40 @@
         p a {
             color: #FFFFFF;
         }
-        #input{
-          font-size: 30px;
-        }
-
 </style>
 </head>
 
 <body>
-      <div class="logo-container">
-          <img src="../img/logo.png" alt="Trulli" height="100px;">
-      </div>
     <nav>
 	    <ul>
 		    <li><a href="home.html">home</a></li>
 		    <li><a href="menu.html">my account</a></li>
 		    <li><a href="contact.html">about us</a></li>
 	    </ul>
-</nav>
-    <center>
+    </nav>
+
+  	<div class="logo-container">
+  	    <img src="../img/logo.png" alt="Trulli" height="200px;">
+  	</div>
+
     <div id="title">
     	<h1>What symptoms are you experiencing?</h1>
-
-<div id = "input">
-    <p>
+    	<p>
         <form action="/action_page.php" method="get">
     <input type="checkbox" name="symptom" value="Fever"> I have a fever.<br>
     <input type="checkbox" name="symptom" value="Headache"> I have a headache.<br>
     <input type="checkbox" name="symptom" value="Diarrhea> I have diarrhea.<br>
     <input type="checkbox" name="symptom" value="Vomiting"> I am vomiting.<br>
     <input type="checkbox" name="symptom" value="Fatigue"> I am fatigued.<br>
+    <input type="checkbox" name="symptom" value="Sweat"> I am uncontrollably sweating.<br>
     <input type="checkbox" name="symptom" value="Congestion"> I am congested.<br>
     <input type="checkbox" name="symptom" value="Sneezing"> I am sneezing.<br>
     <input type="checkbox" name="symptom" value="Coughing"> I am coughing.<br>
-    <input type="checkbox" name="symptom" value="Headache"> I have a headache.<br>
-    <input type="checkbox" name="symptom" value="Sweat"> I am uncontrollably sweating.<br>
     <input type="submit" value="Submit"><br>
   </form>
-    </center>
-</div>
-    </div>
-</body>
-
 
     <footer>
     	<p> SLO Hacks 2019 </p>
     </footer>
-
+</body>
 </html>
