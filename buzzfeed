@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap-reboot.min.css" integrity="sha256-6Uk2Y5UTmbboWmSq40s5J3wNDt6TzIUvse5UAXkWCjI=" crossorigin="anonymous" />
+
+	<style type="text/css">
+			body {
+					background: linear-gradient(to bottom, #99B5E8, #DBB79F);
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					font-family: 'Imprima', sans-serif;
+
+					display: flex;
+					flex-direction: column;
+			}
+
+	#main {
+	width: 100%;
+	padding: 15px;
+	}
+
+	#input {
+		color: white;
+	}
+
+	footer {
+			background-color: burlywood;
+	}
+	footer p{
+			color: white;
+			flex-direction: column;
+			align-items: center;
+	}
+
+	p a {
+			color: #FFFFFF;
+	}
+
+	#input{
+		font-size: 15px;
+	}
+
+	</style>
+	</head>
+
+	<body>
+	      <div class="logo-container">
+	          <img src="../img/logo.png" alt="Trulli" height="100px;">
+	      </div>
+	    <nav>
+		    <ul>
+			    <li><a href="home.html">home</a></li>
+			    <li><a href="menu.html">my account</a></li>
+			    <li><a href="contact.html">about us</a></li>
+		    </ul>
+
+</nav>
+	<center>
+    <div id="header">
+    	<h1 style="color:white;">What symptoms are you experiencing?</h1>
+	</center>
+
+<center>
+<form id = "input">
+	<p style="color:white;"> Please check 1 symptom.</p>
+	<form action="/action_page.php" method="get">
+		<input type="checkbox" name="symptom" id="fev" value="["strep","cold","flu","noro","hiv","mening"]" />I have a fever.<br>
+   	<input type="checkbox" name="symptom" id="dia" value="stomach" />I have diarrhea.<br>
+   	<input type="checkbox" name="symptom" id="vom" value="["stomach","noro"]" />I am vomiting.<br>
+   	<input type="checkbox" name="symptom" id="fat" value="["mono","cold","flu","noro"]" />I am fatigued.<br>
+	 	<input type="checkbox" name="symptom" id="con" value="cold" />I am congested.<br>
+   	<input type="checkbox" name="symptom" id="sne" value="cold" />I am sneezing.<br>
+    <input type="checkbox" name="symptom" id="cou" value="["mono","flu","cold"]" />I am coughing.<br>
+    <input type="checkbox" name="symptom" id="hea" value="["mening","mono","cold","flu","hiv"]" />I have a headache.<br>
+    <input type="checkbox" name="symptom" id="swe" value="hiv" />I am uncontrollably sweating.<br>
+	<br>
+<button type="submit" value="Submit">Submit</button>
+<if "fev"> <a href division_2.1> </if>  
+<else> <a href buzzfeed2> </else>
+ 	</form>
+
+</body>
+
+<footer>
+	<p>SLO Hacks 2019</p>
+</footer>
+
+</body>
+</html>
