@@ -84,8 +84,8 @@
         }
         .Location{
             font-size: 40px;
-            width: 300px;
-            height:300px;
+            width: 200px;
+            height:200px;
             margin: 5 px 5 px 5 px 5 px;
             display: inline-block;
             background-color: #FFE4B5;
@@ -126,12 +126,14 @@
         </nav>
 
 <center>
-<h1 style="color:white;">Which of the following common symptoms are you experiencing?</h1>
+<h1 style="color:white;">Which of the following severe symptoms are you experiencing?</h1>
 </center>
 <div id = "buttons">
-  <a href = "Division_2.2.html"><button class= "Location">Fatigue</button>
-  <a href = "Division_2.2.html"><button class= "Location">Runny or Stuffy Nose</button>
-  <a href = "Division_2.2.html"><button class= "Location">Muscle Aches</button>
+  <a href = "Division_2.2.html"><button class= "Location">Sudden Fever</button>
+  <a href = "Division_2.2.html"><button class= "Location">Swolen Tonsils</button>
+  <a href = "Division_2.2.html"><button class= "Location">Persistant Headache</button>
+  <a href = "Division_2.2.html"><button class= "Location">Nausea and Vomiting</button>
+  <a href = "Division_2.2.html"><button class= "Location">Sore Throat</button>
 
   </div>
 
