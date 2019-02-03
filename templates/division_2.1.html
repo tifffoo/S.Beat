@@ -13,7 +13,7 @@
             background: linear-gradient(to bottom, #99B5E8, #DBB79F);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             font-family: 'Imprima', sans-serif;
 
             display: flex;
@@ -53,7 +53,7 @@
         }
 
         #title {
-            padding: 50px;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -61,7 +61,7 @@
 
         #title h1 {
             color: white;
-            font-size: 50px;
+            font-size: 35px;
         }
 
         #title p {
@@ -91,50 +91,51 @@
         p a {
             color: #FFFFFF;
         }
-        #checkbox{
-            font-size: 40px;
+        #input{
+          font-size: 30px;
         }
-        #submit{
-            font-size: 50px;
-        }
+
 </style>
 </head>
 
 <body>
-    <div class="logo-container">
-  	    <img src="../img/logo.png" alt="Trulli" height="150px;">
-  	</div>
+      <div class="logo-container">
+          <img src="../img/logo.png" alt="Trulli" height="100px;">
+      </div>
     <nav>
 	    <ul>
 		    <li><a href="home.html">home</a></li>
 		    <li><a href="menu.html">my account</a></li>
 		    <li><a href="contact.html">about us</a></li>
 	    </ul>
-    </nav>
-
+</nav>
+    <center>
     <div id="title">
-      
-    	<h1>What foot related symptoms are you experiencing?</h1>
+    	<h1>What symptoms are you experiencing?</h1>
 
-        <div id = "checkbox">
-    	<p>
+<div id = "input">
+    <p>
         <form action="/action_page.php" method="get">
-    <input type="checkbox" name="symptom" value="Rash"> I have skin rash on my feet.<br>
-    <input type="checkbox" name="symptom" value="Blister"> I have blisters.<br>
-    <input type="checkbox" name="symptom" value="Dryness"> I have dryness and scaling.<br>
-    <input type="checkbox" name="symptom" value="Smelly"> I have bad smelling feet.<br>
-    <input type="checkbox" name="symptom" value="Sweaty"> I have smelly feet.<br>
+    <input type="checkbox" name="symptom" value="Fever"> I have a fever.<br>
+    <input type="checkbox" name="symptom" value="Headache"> I have a headache.<br>
+    <input type="checkbox" name="symptom" value="Diarrhea> I have diarrhea.<br>
+    <input type="checkbox" name="symptom" value="Vomiting"> I am vomiting.<br>
+    <input type="checkbox" name="symptom" value="Fatigue"> I am fatigued.<br>
+    <input type="checkbox" name="symptom" value="Congestion"> I am congested.<br>
+    <input type="checkbox" name="symptom" value="Sneezing"> I am sneezing.<br>
+    <input type="checkbox" name="symptom" value="Coughing"> I am coughing.<br>
+    <input type="checkbox" name="symptom" value="Headache"> I have a headache.<br>
+    <input type="checkbox" name="symptom" value="Sweat"> I am uncontrollably sweating.<br>
+    <input type="submit" value="Submit"><br>
   </form>
-        </div>
-        <div id = "submit">
-            <form action="athletes_foot.html" method="get">
-            <input type="submit" value="Submit"><br>
-        </form>
-        </div>
+    </center>
+</div>
     </div>
+</body>
+
 
     <footer>
     	<p> SLO Hacks 2019 </p>
     </footer>
-</body>
+
 </html>
