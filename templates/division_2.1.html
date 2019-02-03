@@ -27,7 +27,8 @@
 
         .logo-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            margin-left: 50px;
             align-items: center;
         }
 
@@ -90,25 +91,28 @@
         p a {
             color: #FFFFFF;
         }
+        #input{
+          font-size: 30px;
+        }
+
 </style>
 </head>
 
 <body>
+      <div class="logo-container">
+          <img src="../img/logo.png" alt="Trulli" height="100px;">
+      </div>
     <nav>
 	    <ul>
 		    <li><a href="home.html">home</a></li>
 		    <li><a href="menu.html">my account</a></li>
 		    <li><a href="contact.html">about us</a></li>
 	    </ul>
-    </nav>
-
-  	<div class="logo-container">
-  	    <img src="../img/logo.png" alt="Trulli" height="200px;">
-  	</div>
-
+</nav>
     <div id="title">
     	<h1>What symptoms are you experiencing?</h1>
-    	<p>
+<div id = "input">
+    <p>
         <form action="/action_page.php" method="get">
     <input type="checkbox" name="symptom" value="Fever"> I have a fever.<br>
     <input type="checkbox" name="symptom" value="Headache"> I have a headache.<br>
@@ -121,6 +125,7 @@
     <input type="checkbox" name="symptom" value="Coughing"> I am coughing.<br>
     <input type="submit" value="Submit"><br>
   </form>
+</div>
     </div>
 
     <footer>
