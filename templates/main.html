@@ -23,6 +23,11 @@
         nav{
             height: 25px;
             font-size: 20px;
+            margin-left: 900px;
+        }
+        .nav-right{
+            margin-left: 1100px;
+            padding: 10px;
         }
 
         .logo-container {
@@ -37,7 +42,7 @@
 
         li {
             display: inline-block;
-            margin-left: 20px;
+            margin-right: 20px;
         }
 
         nav a {
@@ -77,7 +82,15 @@
             font-size: 16px;
             cursor: pointer;
         }
-
+        .login{
+            background-color: #DBB79F;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
         footer {
             background-color: burlywood;
         }
@@ -94,31 +107,14 @@
 </head>
 
 <body>
-    {% if current_user %}
-        <nav>
-    	    <ul>
-    		    <li><a href="/">home</a></li>
-    		    <li><a href="/profile">my account</a></li>
-    		    <li><a href="/about">about us</a></li>
-    	    </ul>
-     {% else %}
-             <ul>
-                 <li><a href="/">home</a></li>
-     		    <li><a href="/profile">my account</a></li>
-     		    <li><a href="/about">about us</a></li>
-             </ul>
-        </nav>
-     {% endif %}
+    <nav>
 
-        <div>
-          {% if current_user %}
-          <li><a style='float: left;'href="{{ logout_url }}" class="button"> Log Out</a><br></li>
-        <!-- <a style='float: right;' href="{{ login_url }}" class="button"> Log In</a> -->
-          {% else %}
-            <li><a style='float: left;'href="{{ login_url }}" class="button"> Log In</a></li>
-          {% endif %}
-      </div>
-  </div>
+	    <ul>
+		    <li><a href="home.html">home</a></li>
+		    <li><a href="menu.html">my account</a></li>
+		    <li><a href="contact.html">about us</a></li>
+	    </ul>
+    </nav>
 
   	<div class="logo-container">
   	    <img src="../img/logo.png" alt="Trulli" height="200px;">
@@ -132,7 +128,7 @@
     		S Beat, short for Student Beat, is a website that collects information on the user’s various symptoms, categorizes and predicts several common diseases. It then provides the user with easy, immediate home remedies, tailored to busy college students.
     	</p>
     	<p>Take Our Diagnosis Test!</p>
-    	<button class="button">Click Here!</button>
+    	<a href = "division_1newnew.html"> <button class="button">Click Here!</button>
     </div>
 
     <footer>

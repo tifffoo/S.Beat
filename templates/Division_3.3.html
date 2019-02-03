@@ -13,7 +13,7 @@
             background: linear-gradient(to bottom, #99B5E8, #DBB79F);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             font-family: 'Imprima', sans-serif;
 
             display: flex;
@@ -53,7 +53,7 @@
         }
 
         #title {
-            padding: 10px;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -61,7 +61,7 @@
 
         #title h1 {
             color: white;
-            font-size: 35px;
+            font-size: 50px;
         }
 
         #title p {
@@ -91,51 +91,41 @@
         p a {
             color: #FFFFFF;
         }
-        #input{
-          font-size: 30px;
+        #checkbox{
+            font-size: 40px;
         }
-
 </style>
 </head>
 
 <body>
-      <div class="logo-container">
-          <img src="../img/logo.png" alt="Trulli" height="100px;">
-      </div>
+    <div class="logo-container">
+  	    <img src="../img/logo.png" alt="Trulli" height="150px;">
+  	</div>
     <nav>
 	    <ul>
 		    <li><a href="home.html">home</a></li>
 		    <li><a href="menu.html">my account</a></li>
 		    <li><a href="contact.html">about us</a></li>
 	    </ul>
-</nav>
-    <center>
-    <div id="title">
-    	<h1>What symptoms are you experiencing?</h1>
+    </nav>
 
-<div id = "input">
-    <p>
+    <div id="title">
+    	<h1>What stomach related symptoms are you experiencing?</h1>
+        <div id = "checkbox">
+    	<p>
         <form action="/action_page.php" method="get">
-    <input type="checkbox" name="symptom" value="Fever"> I have a fever.<br>
-    <input type="checkbox" name="symptom" value="Headache"> I have a headache.<br>
-    <input type="checkbox" name="symptom" value="Diarrhea> I have diarrhea.<br>
-    <input type="checkbox" name="symptom" value="Vomiting"> I am vomiting.<br>
-    <input type="checkbox" name="symptom" value="Fatigue"> I am fatigued.<br>
-    <input type="checkbox" name="symptom" value="Congestion"> I am congested.<br>
-    <input type="checkbox" name="symptom" value="Sneezing"> I am sneezing.<br>
-    <input type="checkbox" name="symptom" value="Coughing"> I am coughing.<br>
-    <input type="checkbox" name="symptom" value="Headache"> I have a headache.<br>
-    <input type="checkbox" name="symptom" value="Sweat"> I am uncontrollably sweating.<br>
+    <input type="checkbox" name="symptom" value="diarrhea"> I have watery diarrhea.<br>
+    <input type="checkbox" name="symptom" value="cramps"> I have cramps.<br>
+    <input type="checkbox" name="symptom" value="vomit"> I am nauseous and I feel like vomiting.<br>
+        <input type="checkbox" name="symptom" value="muscle"> I have muscle aches.<br>
+    <input type="checkbox" name="symptom" value="fever"> I have a sudden fever.<br>
     <input type="submit" value="Submit"><br>
   </form>
-    </center>
-</div>
+        </div>
     </div>
-</body>
-
 
     <footer>
     	<p> SLO Hacks 2019 </p>
     </footer>
-
+</body>
 </html>
