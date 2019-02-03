@@ -13,7 +13,7 @@
             background: linear-gradient(to bottom, #99B5E8, #DBB79F);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             font-family: 'Imprima', sans-serif;
 
             display: flex;
@@ -23,16 +23,12 @@
         nav{
             height: 25px;
             font-size: 20px;
-            margin-left: 900px;
-        }
-        .nav-right{
-            margin-left: 1100px;
-            padding: 10px;
         }
 
         .logo-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            margin-left: 50px;
             align-items: center;
         }
 
@@ -42,7 +38,7 @@
 
         li {
             display: inline-block;
-            margin-right: 20px;
+            margin-left: 20px;
         }
 
         nav a {
@@ -57,7 +53,7 @@
         }
 
         #title {
-            padding: 10px;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -82,15 +78,7 @@
             font-size: 16px;
             cursor: pointer;
         }
-        .login{
-            background-color: #DBB79F;
-            border: none;
-            color: white;
-            padding: 15px 25px;
-            text-align: center;
-            font-size: 16px;
-            cursor: pointer;
-        }
+
         footer {
             background-color: burlywood;
         }
@@ -103,12 +91,22 @@
         p a {
             color: #FFFFFF;
         }
+        #checkbox{
+            font-size: 40px;
+            padding: 20px;
+        }
+        #submit{
+            padding: 20px;
+            font-size: 40px;
+        }
 </style>
 </head>
 
 <body>
+    <div class="logo-container">
+  	    <img src="../img/logo.png" alt="Trulli" height="150px;">
+  	</div>
     <nav>
-
 	    <ul>
 		    <li><a href="home.html">home</a></li>
 		    <li><a href="menu.html">my account</a></li>
@@ -116,23 +114,25 @@
 	    </ul>
     </nav>
 
-  	<div class="logo-container">
-  	    <img src="../img/logo.png" alt="Trulli" height="200px;">
-  	</div>
-
     <div id="title">
-    	<h1>Welcome to S Beat</h1>
+    	<h1>What knee related symptoms are you experiencing?</h1>
+        <div id = "checkbox">
     	<p>
-    		College is often compared to a petri dish— like the exponential growth of bacteria, diseases are easily and quickly transmitted. With thousands of students fitted in close living quarters, diseases are easily spread without proper prevention.<br>
-    		As you may know, modern college students suffer from a wide variety of self-care related issues: drinking, substance abuse, mental health, sleep deprivation, just to name a few. Surprisingly, few are willing to take the extra step to contribute to their body’s health. With the things students would do to achieve academic proficiency, it is shocking how unwilling they are at the risk of their own health.<br>
-    		S Beat, short for Student Beat, is a website that collects information on the user’s various symptoms, categorizes and predicts several common diseases. It then provides the user with easy, immediate home remedies, tailored to busy college students.
-    	</p>
-    	<p>Take Our Diagnosis Test!</p>
-    	<a href = "division_1newnew.html"> <button class="button">Click Here!</button>
+        <form action="/action_page.php" method="get">
+    <input type="checkbox" name="symptom" value="pain"> I have pain when kneeling.<br>
+    <input type="checkbox" name="symptom" value="standing"> I have knee pain when I am standing for a long time.<br>
+    <input type="checkbox" name="symptom" value="Exercise"> I have pain in my knees when I exercise.<br>
+  </form>
+        </div>
+        <div id = "submit">
+        <p>
+        <form action="/action_page.php" method="get">
+        <input type="submit" value="Submit"><br>
+    </div>
     </div>
 
     <footer>
-    	<p> Slo Hacks 2019 </p>
+    	<p> SLO Hacks 2019 </p>
     </footer>
 </body>
 </html>
