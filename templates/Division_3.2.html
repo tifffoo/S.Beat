@@ -94,6 +94,9 @@
         #checkbox{
             font-size: 40px;
         }
+        #submit{
+            font-size: 50px;
+        }
 </style>
 </head>
 
@@ -110,7 +113,7 @@
     </nav>
 
     <div id="title">
-    	<h1>What feet related symptoms are you experiencing?</h1>
+    	<h1>What foot related symptoms are you experiencing?</h1>
         <div id = "checkbox">
     	<p>
         <form action="/action_page.php" method="get">
@@ -119,8 +122,12 @@
     <input type="checkbox" name="symptom" value="Dryness"> I have dryness and scaling.<br>
     <input type="checkbox" name="symptom" value="Smelly"> I have bad smelling feet.<br>
     <input type="checkbox" name="symptom" value="Sweaty"> I have smelly feet.<br>
-    <input type="submit" value="Submit"><br>
   </form>
+        </div>
+        <div id = "submit">
+            <form action="athletes_foot.html" method="get">
+            <input type="submit" value="Submit"><br>
+        </form>
         </div>
     </div>
 
