@@ -13,7 +13,7 @@
             background: linear-gradient(to bottom, #99B5E8, #DBB79F);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             font-family: 'Imprima', sans-serif;
 
             display: flex;
@@ -27,7 +27,8 @@
 
         .logo-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            margin-left: 50px;
             align-items: center;
         }
 
@@ -52,7 +53,7 @@
         }
 
         #title {
-            padding: 10px;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -90,10 +91,16 @@
         p a {
             color: #FFFFFF;
         }
+        #checkbox{
+            font-size: 40px;
+        }
 </style>
 </head>
 
 <body>
+    <div class="logo-container">
+  	    <img src="../img/logo.png" alt="Trulli" height="150px;">
+  	</div>
     <nav>
 	    <ul>
 		    <li><a href="home.html">home</a></li>
@@ -102,23 +109,23 @@
 	    </ul>
     </nav>
 
-  	<div class="logo-container">
-  	    <img src="../img/logo.png" alt="Trulli" height="200px;">
-  	</div>
-
     <div id="title">
-    	<h1>Welcome to S Beat</h1>
+    	<h1>What stomach related symptoms are you experiencing?</h1>
+        <div id = "checkbox">
     	<p>
-    		College is often compared to a petri dish— like the exponential growth of bacteria, diseases are easily and quickly transmitted. With thousands of students fitted in close living quarters, diseases are easily spread without proper prevention.<br>
-    		As you may know, modern college students suffer from a wide variety of self-care related issues: drinking, substance abuse, mental health, sleep deprivation, just to name a few. Surprisingly, few are willing to take the extra step to contribute to their body’s health. With the things students would do to achieve academic proficiency, it is shocking how unwilling they are at the risk of their own health.<br>
-    		S Beat, short for Student Beat, is a website that collects information on the user’s various symptoms, categorizes and predicts several common diseases. It then provides the user with easy, immediate home remedies, tailored to busy college students.
-    	</p>
-    	<p>Take Our Diagnosis Test!</p>
-    	<a href = "division_1newnew.html"><button class="button">Click Here!</button>
+        <form action="/action_page.php" method="get">
+    <input type="checkbox" name="symptom" value="diarrhea"> I have watery diarrhea.<br>
+    <input type="checkbox" name="symptom" value="cramps"> I have cramps.<br>
+    <input type="checkbox" name="symptom" value="vomit"> I am nauseous and I feel like vomiting.<br>
+        <input type="checkbox" name="symptom" value="muscle"> I have muscle aches.<br>
+    <input type="checkbox" name="symptom" value="fever"> I have a sudden fever.<br>
+    <input type="submit" value="Submit"><br>
+  </form>
+        </div>
     </div>
 
     <footer>
-    	<p> Slo Hacks 2019 </p>
+    	<p> SLO Hacks 2019 </p>
     </footer>
 </body>
 </html>
