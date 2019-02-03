@@ -1,0 +1,94 @@
+body, html {
+    background: linear-gradient(to bottom, #99B5E8, #DBB79F);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Imprima', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    height: 25px;
+    font-size: 20px;
+    margin-left: 900px;
+}
+.nav-right{
+    margin-left: 1100px;
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none:
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover,
+nav a:active
+{
+    background-color: #DBB79F;
+}
+
+#title {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        }
+
+#title h1 {
+    color: white;
+    font-size: 50px;
+}
+
+#title p {
+    color: white;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #99B5E8;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login{
+    background-color: #DBB79F;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+footer {
+    background-color: burlywood;
+}
+footer p{
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+p a {
+    color: #FFFFFF;
+}
