@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>SBeat</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap-reboot.min.css" integrity="sha256-6Uk2Y5UTmbboWmSq40s5J3wNDt6TzIUvse5UAXkWCjI=" crossorigin="anonymous" />
+
+    <style type="text/css">
+        body {
+            background: linear-gradient(to bottom, #99B5E8, #DBB79F);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            font-family: 'Imprima', sans-serif;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav{
+            height: 25px;
+            font-size: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none:
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover,
+        nav a:active
+        {
+            background-color: #DBB79F;
+        }
+
+        #title {
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                }
+
+        #title h1 {
+            color: white;
+            font-size: 50px;
+        }
+
+        #title p {
+            color: white;
+            font-size: 20px;
+        }
+
+        .button {
+            background-color: #99B5E8;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: burlywood;
+        }
+        footer p{
+            color: white;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p a {
+            color: #FFFFFF;
+        }
+        #checkbox{
+            font-size: 40px;
+            padding: 20px;
+        }
+        #submit{
+            padding: 20px;
+            font-size: 40px;
+        }
+</style>
+</head>
+
+<body>
+    <div class="logo-container">
+  	    <img src="../img/logo.png" alt="Trulli" height="150px;">
+  	</div>
+    <nav>
+	    <ul>
+		    <li><a href="home.html">home</a></li>
+		    <li><a href="menu.html">my account</a></li>
+		    <li><a href="contact.html">about us</a></li>
+	    </ul>
+    </nav>
+
+    <div id="title">
+    	<h1>What knee related symptoms are you experiencing?</h1>
+        <div id = "checkbox">
+    	<p>
+        <form action="/action_page.php" method="get">
+    <input type="checkbox" name="symptom" value="pain"> I have pain when kneeling.<br>
+    <input type="checkbox" name="symptom" value="standing"> I have knee pain when I am standing for a long time.<br>
+    <input type="checkbox" name="symptom" value="Exercise"> I have pain in my knees when I exercise.<br>
+  </form>
+        </div>
+        <div id = "submit">
+        <p>
+        <form action="/action_page.php" method="get">
+        <input type="submit" value="Submit"><br>
+    </div>
+    </div>
+
+    <footer>
+    	<p> SLO Hacks 2019 </p>
+    </footer>
+</body>
+</html>

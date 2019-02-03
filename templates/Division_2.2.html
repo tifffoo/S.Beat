@@ -27,10 +27,15 @@
 
         .logo-container {
             display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            align-items: center;
+        }
+        .body-container{
+            display:flex;
             flex-direction: column;
             align-items: center;
         }
-
         ul {
             list-style-type: none:
         }
@@ -77,7 +82,7 @@
             font-size: 16px;
             cursor: pointer;
         }
-
+      
         footer {
             background-color: burlywood;
         }
@@ -85,11 +90,61 @@
             color: white;
             flex-direction: column;
             align-items: center;
+
         }
 
         p a {
             color: #FFFFFF;
         }
+
+        h1{
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="Trulli" height="100px;">
+        </div>
+
+        <nav>
+    	    <ul>
+    		    <li><a href="home.html">home</a></li>
+    		    <li><a href="menu.html">my account</a></li>
+    		    <li><a href="contact.html">about us</a></li>
+    	    </ul>
+        </nav>
+
+        <h1> Please Indicate Where On The Body You Feel Discomfort."</h1>
+        <div class = "body-container">
+            <img src = "../img/hooman body.png" alt = "Hooman" height = "700px";>
+            </div>
+        <div id = "red-button">
+            <img style = "position:absolute; TOP:410px; LEFT:690px; WIDTH:50px; HEIGHT:50px" src = "../img/STOMACH.png";>
+            </div>
+        <div id = "red-button">
+            <img style = "position:absolute; TOP:530px; LEFT:700px; WIDTH:50px; HEIGHT:50px" src = "../img/GENITALS.png";>
+            </div>
+        <div id = "red-button">
+            <img style = "position:absolute; TOP:650px; LEFT:650px; WIDTH:50px; HEIGHT:50px" src = "../img/KNEE.png";>
+            </div>
+        <div id = "red-button">
+            <img style = "position:absolute; TOP:830px; LEFT:700px; WIDTH:50px; HEIGHT:50px" src = "../img/FOOT.png";>
+            </div>
+        <div id = "red-button">
+            <img style = "position:absolute; TOP:200px; LEFT:690px; WIDTH:50px; HEIGHT:50px" src = "../img/EYES.png";>
+            </div>
+        <div id = "red-button">
+            <img style = "position:absolute; TOP:280px; LEFT:690px; WIDTH:50px; HEIGHT:50px" src = "../img/THROAT.png";>
+            </div>
+        <footer>
+        	<p> Slo Hacks 2019 </p>
+        </footer>
+    </body>
+    </html>
+
 </style>
 </head>
 
@@ -128,3 +183,4 @@
     </footer>
 </body>
 </html>
+
