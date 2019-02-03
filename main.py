@@ -58,7 +58,7 @@ class HomePage(webapp2.RequestHandler):
             'current_person': current_person,
         }
 
-        template = env.get_template("templates/home.html")
+        template = env.get_template("templates/main.html")
         self.response.write(template.render(templateVars))
         # logging.info(response.json())
 
