@@ -108,21 +108,13 @@
 
 <body>
     <nav>
-    	    <ul>
-    		    <li><a href="/main">home</a></li>
-    		    <li><a href="/profile">my account</a></li>
-    		    <li><a href="/about">about us</a></li>
-    	   </ul>
-    </nav>
 
-        <div class = "nav-right">
-          {% if current_user %}
-          <li><a style='float: right;'href="{{ logout_url }}" class="login"> Log In</a> -->
-          {% else %}
-            <li><a style='float: right;'href="{{ login_url }}" class="login"> Log In</a></li>
-          {% endif %}
-      </div>
-  </div>
+	    <ul>
+		    <li><a href="home.html">home</a></li>
+		    <li><a href="menu.html">my account</a></li>
+		    <li><a href="contact.html">about us</a></li>
+	    </ul>
+    </nav>
 
   	<div class="logo-container">
   	    <img src="../img/logo.png" alt="Trulli" height="200px;">
