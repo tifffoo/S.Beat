@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<title>Profile</title>
+
+<head>
+  <link href="../CSS/profile.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+
+  {% if current_user %}
+    <div class="navbar fill">
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/profile'>Profile</a></li>
+        <li><a href="/about">About</a></li>
+    </div>
+
+    <br><br><br><br><br>
+
+    <center>
+    <h1 class="icon"> Hello, {{ current_user.email() }}!</h1>
+    <p>Recent Searches:</p>
+  {% else %}
+    <div class="navbar fill">
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href="/about">About</a></li>
+    </div>
+  {% endif %}
+
+</body>
